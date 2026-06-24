@@ -11,7 +11,7 @@ int main;{
         y = x % y;
         x = temp;
     }
-    gcd = x;
+    gcd = x;  
      int lcm = (a * b) / gcd;
      cout << "LCM = " << lcm;
       return 0;

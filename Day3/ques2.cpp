@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 int main(){
+    
     int start, end;
     cout << "Enter starting number:";
     cin >> start;
-    
+
     cout << "Enter ending number:";
     cin >> end;
     cout << "Prime numbers between" << start << " and " << end << " are:\n";

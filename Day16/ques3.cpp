@@ -1,7 +1,6 @@
 #include <iostream> 
 using namespace std;
-int main()
-{
+int main(){
     int n, sum; 
     cout << "Enter number of elements: ";
     cin >> n;

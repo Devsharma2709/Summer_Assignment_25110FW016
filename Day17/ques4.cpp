@@ -1,4 +1,4 @@
-#include <iostream> 
+#include <iostream>
 using namespace std;
 int main(){
     int n1 , n2;
@@ -11,10 +11,11 @@ int main(){
     cout << "Enter size of second array: ";
     cin >> n2;
     int arr2[n2];
-    cout <<" Enter second array elements: ";
+    cout << "Enter second array elements: ";
     for(int i = 0; i < n2; i++)
     cin >> arr2[i];
-    cout << "Intersection of arrays: ";
+    cout << "Common elements are: ";
+    bool found = false;
     for(int i = 0; i < n1; i++)
     {
         for(int j = 0; j < n2; j++)
@@ -22,9 +23,12 @@ int main(){
             if(arr1[i] == arr2[j])
             {
                 cout << arr1[i] << " ";
+                found = true;
                 break;
             }
         }
     }
+    if(!found)
+    cout << "No common elements. ";
     return 0;
 }
